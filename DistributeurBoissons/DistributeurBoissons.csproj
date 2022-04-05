@@ -1,0 +1,85 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>can.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="log4net.config" />
+    <None Remove="Properties\Ressources\BlueDrink.png" />
+    <None Remove="Properties\Ressources\Coffee.png" />
+    <None Remove="Properties\Ressources\Cola.png" />
+    <None Remove="Properties\Ressources\Drinks\Lemonade.png" />
+    <None Remove="Properties\Ressources\Drinks\Water.png" />
+    <None Remove="Properties\Ressources\Money\CHF0.05.png" />
+    <None Remove="Properties\Ressources\Money\CHF0.1.png" />
+    <None Remove="Properties\Ressources\Money\CHF0.2.png" />
+    <None Remove="Properties\Ressources\Money\CHF0.5.png" />
+    <None Remove="Properties\Ressources\Money\CHF1.png" />
+    <None Remove="Properties\Ressources\Money\CHF2.png" />
+    <None Remove="Properties\Ressources\Money\CHF5.png" />
+    <None Remove="Properties\Ressources\OrangeDrink.png" />
+    <None Remove="Properties\Ressources\water.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Effort.EF6" Version="2.2.16" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="log4net" Version="2.0.14" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Log4Net.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="System.Data.SQLite" Version="1.0.115.5" />
+    <PackageReference Include="System.Linq" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="can.ico" />
+    <Content Include="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Drinks\BlueDrink.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Drinks\Coffee.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Drinks\Cola.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Drinks\Lemonade.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Drinks\OrangeDrink.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Drinks\Water.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Money\CHF0.05.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Money\CHF0.1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Money\CHF0.2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Money\CHF0.5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Money\CHF1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Money\CHF2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\Ressources\Money\CHF5.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
